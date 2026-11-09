@@ -330,8 +330,9 @@ body:not(.hide-notes) .annot[data-note]::before {
   font-size: 14.5px;
   letter-spacing: 0.01em;
   border: 1.5px solid var(--kncv-black);
+  border-radius: 0;
   cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
   text-decoration: none;
 }
 .btn-primary {
@@ -435,15 +436,26 @@ h1, h2, h3, h4 {
   font-weight: 700;
   color: var(--kncv-black);
 }
+/* All titles in same style: Full Uppercase (Brand Guide Sheet 8) */
+h1, h2,
+.hero h1,
+.page-hero h1,
+.section-head h2,
+.editorial-heading,
+.synergy-header h2,
+.agency-split-intro h2,
+.cta-band h2,
+.cta-heading {
+  text-transform: uppercase !important;
+  letter-spacing: 0.015em;
+}
 h1 {
   font-size: clamp(34px, 4.2vw, 50px);
   line-height: 1.1;
-  letter-spacing: -0.015em;
 }
 h2 {
   font-size: clamp(24px, 2.8vw, 34px);
   line-height: 1.18;
-  letter-spacing: -0.01em;
 }
 h3 {
   font-size: 20px;
@@ -452,17 +464,6 @@ h3 {
 h4 {
   font-size: 16px;
   line-height: 1.35;
-}
-
-/* Selective Uppercase Display Headings (Brand Guide Sheet 8) */
-.hero h1,
-.page-hero h1,
-.section-head h2,
-.editorial-heading,
-.synergy-header h2,
-.agency-split-intro h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.015em;
 }
 
 /* Sentence-case narrative statements & Vision/Mission Cards (About page) */
@@ -1398,9 +1399,9 @@ section:has(.cta-band) {
   font-weight: 700;
   color: #FFFFFF !important;
   line-height: 1.18;
-  letter-spacing: -0.015em;
+  letter-spacing: 0.015em;
   margin: 0;
-  text-transform: none;
+  text-transform: uppercase !important;
 }
 
 .cta-band p,

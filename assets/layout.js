@@ -114,8 +114,8 @@
         <div id="kncv-modal-media-badge" style="display:none;margin-top:14px;padding:8px 12px;background:var(--fill);border-left:3px solid var(--kncv-red);font-size:12.5px;color:var(--ink-2);font-weight:700" aria-label="Media accessibility features"></div>
       </div>
       <div class="kncv-modal-actions">
-        <button type="button" class="btn btn-secondary btn-sm" id="kncv-modal-cancel">Close</button>
-        <a class="btn btn-primary btn-sm" id="kncv-modal-primary" href="courses.html">Continue</a>
+        <button type="button" class="btn btn-secondary btn-sm" id="kncv-modal-cancel">Close modal →</button>
+        <a class="btn btn-primary btn-sm" id="kncv-modal-primary" href="courses.html">Continue →</a>
       </div>
     </div>
   </div>`;
@@ -304,7 +304,7 @@
         eyebrow: 'External Learning Platform · learn.kncvtbc.org',
         title: 'Continue to the KNCV Learning Management System',
         desc: 'This action connects you to the KNCV Learning Management System (learn.kncvtbc.org) for single sign-on learner registration, course enrolment, verified certificates, and Community of Practice workspaces.',
-        primaryText: 'Proceed to LMS Sign-In ↗',
+        primaryText: 'Proceed to LMS sign-in →',
         primaryHref: '#'
       });
     });
@@ -328,8 +328,8 @@
         desc: desc,
         mediaBadge: isVideo ? 'Closed Captions: English, French, Spanish (WebVTT) · Synchronized Transcript & Audio Description Available' : '',
         primaryText: isRegistration
-          ? 'Confirm Registration →'
-          : (isVideo ? 'Launch Stream' : (isStory ? 'Discuss in Community Forum ↗' : 'Confirm Download ↓')),
+          ? 'Confirm registration →'
+          : (isVideo ? 'Launch stream →' : (isStory ? 'Discuss in community forum →' : 'Confirm download →')),
         primaryHref: '#'
       });
     });
