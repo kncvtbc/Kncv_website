@@ -7,7 +7,7 @@
   }
 
   const nav = [
-    ['home', 'home.html', 'Home'],
+    ['home', 'index.html', 'Home'],
     ['about', 'about.html', 'About'],
     ['courses', 'courses.html', 'Courses'],
     ['resources', 'resources.html', 'Resources'],
@@ -21,7 +21,7 @@
   const header = `
   <header class="site-header annot" data-note="Global header · official KNCV TB Plus red/black logo">
     <div class="container">
-      <a href="home.html" class="logo" id="logo-link">
+      <a href="index.html" class="logo" id="logo-link">
         <img src="KNCV_TB_PLUS_ZW.png" alt="KNCV TB Plus" class="kncv-logo-img" />
         <span class="logo-divider" aria-hidden="true"></span>
         <span class="logo-title">Knowledge Exchange<small>Global TB Learning &amp; Practice</small></span>
@@ -57,7 +57,7 @@
     <div class="container">
       <div class="cols">
         <div class="footer-brand-col">
-          <a href="home.html" class="logo footer-logo" aria-label="KNCV TB Plus Home">
+          <a href="index.html" class="logo footer-logo" aria-label="KNCV TB Plus Home">
             <img src="KNCV_TB_PLUS_W.png" alt="KNCV TB Plus" class="kncv-logo-img-footer" />
           </a>
           <p class="footer-tagline">KNCV: Together we can end TB.</p>
@@ -95,7 +95,7 @@
       </div>
       <div class="footer-bottom">
         <span>© 2026 KNCV TB Plus (KNCV Tuberculosis Foundation) · Knowledge Exchange · <a href="https://www.kncvtbc.org/en" target="_blank" rel="noopener" style="text-decoration:underline">kncvtbc.org/en</a></span>
-        <span><a href="contact.html#privacy">Privacy notice</a> · <a href="contact.html#privacy">Cookie settings</a> · <a href="index.html">Sitemap</a></span>
+        <span><a href="contact.html#privacy">Privacy notice</a> · <a href="contact.html#privacy">Cookie settings</a></span>
       </div>
     </div>
   </footer>

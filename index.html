@@ -2,128 +2,204 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sitemap · KNCV Knowledge Exchange</title>
-<meta name="description" content="Sitemap and page architecture for the KNCV Knowledge Exchange website.">
+<title>Home · KNCV TB Plus Knowledge Exchange</title>
+<meta name="description" content="KNCV TB Plus Knowledge Exchange: online courses, clinical toolkits, webinars and publications for tuberculosis and global health professionals. Together we can end TB.">
 <link rel="stylesheet" href="assets/wireframe.css">
 </head>
-<body data-page="sitemap" class="hide-notes">
+<body data-page="home" class="hide-notes">
 <main id="main-content" tabindex="-1">
-  <section class="page-hero annot" data-note="01 · Information Architecture Overview" style="padding:64px 0 48px">
-    <div class="container">
-      <span class="eyebrow">KNCV TB Plus · Information Architecture</span>
-      <h1>KNCV Knowledge Exchange</h1>
-      <p class="lead" style="margin-top:16px">Website sitemap and page architecture aligned with the official KNCV TB Plus Brand Identity ("Together we can end TB."). Click any page card or subpage link to open it. Press <b>A</b> on any page to show or hide section annotations.</p>
-      <div class="meta" style="margin-top:24px">
-        <span class="tag">6 primary pages</span>
-        <span class="tag">+ Course detail &amp; Resource subpages</span>
-        <span class="tag">↗ LMS = external link to learn.kncvtbc.org</span>
-        <a class="tag solid" href="simple/home.html">View Simple Low-Fi Version →</a>
+  <!-- 1. HERO -->
+  <section class="hero annot" data-note="01 · Hero: KNCV TB Plus Knowledge Exchange introduction">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">KNCV TB Plus · Knowledge Exchange</span>
+        <h1>Learn, share and grow with global TB expertise</h1>
+        <p class="lead">Practical clinical courses, interactive webinars, expert faculty, and open-access implementation toolkits designed for frontline healthcare professionals and national TB programmes worldwide.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="hero-cta-explore" href="courses.html">Explore Courses →</a>
+          <a class="btn btn-secondary" id="hero-cta-about" href="about.html">About KNCV TB Plus</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat-item"><b class="stat-number" data-target="40" data-suffix="+">40+</b><span>Interactive Courses</span></div>
+          <div class="hero-stat-item"><b class="stat-number" data-target="12" data-suffix="k+">12k+</b><span>Health Workers</span></div>
+          <div class="hero-stat-item"><b class="stat-number" data-target="80" data-suffix="+">80+</b><span>Partner Countries</span></div>
+          <div class="hero-stat-item"><b class="stat-number" data-target="300" data-suffix="+">300+</b><span>Clinical Resources</span></div>
+        </div>
+      </div>
+
+      <!-- HERO VISUAL SHOWCASE (Straight 0px Corners, Unboxed Authentic Photography) -->
+      <div class="hero-showcase reveal">
+        <div class="hero-image-card">
+          <img src="assets/img/hero-knowledge-exchange.jpg" alt="Healthcare professionals reviewing digital chest X-ray and TB diagnostics in a clinical setting">
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section-white annot" data-note="02 · Interactive Sitemap & User Journey" style="padding-top:24px">
+  <!-- 2. FEATURED COURSES -->
+  <section class="section-white annot" data-note="02 · Featured & popular courses">
     <div class="container">
-      <h2 class="sr-only">Site Architecture &amp; Page Directory</h2>
-      <div class="sitemap">
-        <!-- 01 Home -->
-        <article class="sm-col reveal" id="sm-home">
-          <header><a href="home.html"><b>01</b><h3>Home</h3><p class="small muted">Overview &amp; featured content</p></a></header>
-          <div class="sm-thumb" style="grid-template-rows:2fr 1fr 1fr" aria-hidden="true"><i></i><i></i><i></i></div>
-          <ul>
-            <li><a href="home.html">Hero section</a></li>
-            <li>Knowledge Exchange intro</li>
-            <li>Featured courses</li>
-            <li>About KNCV intro</li>
-            <li>Learning opportunities</li>
-            <li>Featured resources</li>
-            <li class="cta"><a href="courses.html">CTA: Explore Courses →</a></li>
-          </ul>
-        </article>
-
-        <!-- 02 About -->
-        <article class="sm-col reveal" id="sm-about">
-          <header><a href="about.html"><b>02</b><h3>About</h3><p class="small muted">Mission, vision &amp; KNCV</p></a></header>
-          <div class="sm-thumb" style="grid-template-rows:1fr 2fr 1fr" aria-hidden="true"><i></i><i></i><i></i></div>
-          <ul>
-            <li><a href="about.html">About KNCV</a></li>
-            <li>Mission &amp; vision</li>
-            <li>Objectives</li>
-            <li><a href="about.html#synergy-model">Knowledge Institute Model</a></li>
-            <li><a href="about.html#faculty">Faculty &amp; experts</a></li>
-            <li><a href="about.html#partners">Partners &amp; collaborators</a></li>
-            <li class="cta"><a href="courses.html">CTA: Start Learning →</a></li>
-          </ul>
-        </article>
-
-        <!-- 03 Courses -->
-        <article class="sm-col reveal" id="sm-courses">
-          <header><a href="courses.html"><b>03</b><h3>Courses</h3><p class="small muted">Catalogue &amp; enrolment</p></a></header>
-          <div class="sm-thumb" style="grid-template-columns:1fr 3fr" aria-hidden="true"><i></i><i></i></div>
-          <ul>
-            <li><a href="courses.html">Course catalogue</a></li>
-            <li>Compact course cards</li>
-            <li><a href="course-detail.html">→ Course details subpage</a></li>
-            <li>Learning outcomes</li>
-            <li>Faculty information</li>
-            <li class="lms"><a href="#lms">Enroll Now (→ LMS)</a></li>
-          </ul>
-        </article>
-
-        <!-- 04 Resources -->
-        <article class="sm-col reveal" id="sm-resources">
-          <header><a href="resources.html"><b>04</b><h3>Resources</h3><p class="small muted">Knowledge &amp; learning hubs</p></a></header>
-          <div class="sm-thumb" style="grid-template-rows:1fr 1fr 1fr" aria-hidden="true"><i></i><i></i><i></i></div>
-          <ul>
-            <li><a href="resources.html">6 Resource Hubs &amp; Toolkits grid</a></li>
-            <li><a href="toolkits.html">→ Toolkit subpage</a></li>
-            <li><a href="webinars.html">→ Webinars subpage</a></li>
-            <li><a href="publications.html">→ Publications subpage</a></li>
-            <li><a href="toolkits.html#pcf-toolkit">People-Centred Hub</a></li>
-            <li><a href="toolkits.html#dat-toolkit">Global DAT Task Force Hub</a></li>
-            <li><a href="resources.html#clinical-knowledge-base">Knowledge Base &amp; Job Aids</a></li>
-          </ul>
-        </article>
-
-        <!-- 05 Community of Practice -->
-        <article class="sm-col reveal" id="sm-community">
-          <header><a href="community.html"><b>05</b><h3>Community</h3><p class="small muted">Community of Practice</p></a></header>
-          <div class="sm-thumb" style="grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-          <ul>
-            <li><a href="community.html">Community overview</a></li>
-            <li><a href="community.html#groups">Thematic groups</a></li>
-            <li><a href="community.html#discussions">Discussions &amp; forums</a></li>
-            <li><a href="community.html#events">Events &amp; consultations</a></li>
-            <li>Announcements</li>
-            <li>Member contributions</li>
-            <li>Shared resources &amp; tools</li>
-            <li class="lms"><a href="#lms">Join Community (→ LMS)</a></li>
-          </ul>
-        </article>
-
-        <!-- 06 Contact -->
-        <article class="sm-col reveal" id="sm-contact">
-          <header><a href="contact.html"><b>06</b><h3>Contact</h3><p class="small muted">Enquiries &amp; support</p></a></header>
-          <div class="sm-thumb" style="grid-template-columns:3fr 2fr" aria-hidden="true"><i></i><i></i></div>
-          <ul>
-            <li><a href="contact.html">General enquiry form</a></li>
-            <li>Contact information</li>
-            <li><a href="contact.html#support">Technical &amp; learner support</a></li>
-            <li><a href="contact.html#faq">Frequently asked questions</a></li>
-            <li><a href="contact.html#privacy">Privacy notice &amp; consent</a></li>
-          </ul>
-        </article>
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Course Catalogue</span>
+          <h2>Featured courses</h2>
+          <p>Evidence-based training for prevention, rapid molecular diagnosis, and patient-centred TB treatment.</p>
+        </div>
+        <a class="link-arrow" id="featured-all-courses" href="courses.html">View all courses →</a>
       </div>
+      <div class="grid g3" id="home-courses-grid">
+        <a class="card reveal" href="course-detail.html" id="course-card-1">
+          <div class="card-thumb">
+            <img src="assets/img/course-contact-investigation.jpg" alt="Community health worker and clinician reviewing tuberculosis contact investigation and screening data at a Community Health Center">
+          </div>
+          <div class="card-body">
+            <div class="meta"><span class="tag solid">Intermediate</span><span class="tag">Contact Tracing</span></div>
+            <h3>Source and Contact Investigation for Tuberculosis</h3>
+            <p>Systematically identify, screen, and evaluate household contacts, trace transmission chains, and initiate preventive treatment.</p>
+          </div>
+          <div class="card-foot"><span>8 hours · Self-paced</span><span class="link-arrow">View →</span></div>
+        </a>
+        <a class="card reveal" href="course-detail.html" id="course-card-2">
+          <div class="card-thumb">
+            <img src="assets/img/course-sos-stool-testing.jpg" alt="Laboratory specialist performing Simple One-Step (SOS) stool testing for molecular pediatric TB diagnosis">
+          </div>
+          <div class="card-body">
+            <div class="meta"><span class="tag solid">Beginner</span><span class="tag">Diagnostics</span></div>
+            <h3>Simple One-Step (SOS) Stool Testing for Tuberculosis</h3>
+            <p>Master the KNCV Simple One-Step (SOS) stool processing method to enable rapid molecular GeneXpert diagnosis without invasive sputum collection.</p>
+          </div>
+          <div class="card-foot"><span>6 hours · Self-paced</span><span class="link-arrow">View →</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <div style="margin-top:64px">
-        <span class="eyebrow">Learner Flow</span>
-        <h3>User journey · website → LMS</h3>
-        <div class="steps steps-5" style="margin-top:24px">
-          <div class="step"><h4>Discover</h4><p>Visitor lands on the Knowledge Exchange homepage.</p></div>
-          <div class="step"><h4>Explore</h4><p>Browses course catalogue, toolkits, and resources.</p></div>
-          <div class="step"><h4>Connect</h4><p>Explores Community of Practice groups &amp; discussions.</p></div>
-          <div class="step"><h4>Register / Sign in</h4><p>Continues to the LMS to create an account or sign in.</p></div>
-          <div class="step"><h4>Enroll &amp; Engage</h4><p>Enrols in courses, accesses forums, and downloads tools.</p></div>
+  <!-- 3. ABOUT INTRO (Warm Editorial Stone Section) -->
+  <section class="section-sand annot" data-note="03 · About KNCV introduction">
+    <div class="container split">
+      <div class="reveal framed-photo">
+        <img src="assets/img/hub-stigma-toolkit.jpg" alt="Compassionate healthcare counsellor speaking with a patient and family in a clinic">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">About KNCV TB Plus</span>
+        <h2>Over a century of dedication to ending tuberculosis</h2>
+        <p class="lead" style="margin-top:16px">KNCV TB Plus (KNCV) is a global non-profit organisation. Since its establishment in 1903, KNCV’s mission has been to save lives and end human suffering through the promotion of health and the global elimination of tuberculosis (TB) and other related diseases.</p>
+        <div class="grid g2" style="margin-top:28px;gap:16px">
+          <div class="feature" style="padding:20px">
+            <h3>People-first approach</h3>
+            <p>Innovative, effective, and sustainable strategies that demonstrate positive impact on people’s health.</p>
+          </div>
+          <div class="feature" style="padding:20px">
+            <h3>System readiness</h3>
+            <p>Scaling up effective interventions for TB prevention, diagnosis, and treatment worldwide.</p>
+          </div>
+        </div>
+        <a class="link-arrow" id="about-intro-link" href="about.html" style="margin-top:28px">Learn more about KNCV TB Plus →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. LEARNING OPPORTUNITIES & KEY BENEFITS -->
+  <section class="section-white annot" id="learning-benefits" data-note="04 · Learning opportunities & key benefits">
+    <div class="container">
+      <div class="center reveal" style="margin-bottom:48px">
+        <span class="eyebrow">Why learn with us</span>
+        <h2>Learning opportunities &amp; key benefits</h2>
+        <p class="lead">Competent, well-supported health workforces are essential to implementing the End TB Strategy and achieving quality patient outcomes across national health systems.</p>
+      </div>
+      <div class="grid g3 features-grid">
+        <div class="feature reveal"><div class="ico" data-icon="target"><span class="ico-inner">◎</span></div><h3>Self-paced e-learning</h3><p>Learn anytime with structured online modules tailored for busy clinicians and programme staff.</p></div>
+        <div class="feature reveal"><div class="ico" data-icon="cohort"><span class="ico-inner">◈</span></div><h3>Expert-led cohorts</h3><p>Facilitated courses with live clinical sessions, case reviews, and international peers.</p></div>
+        <div class="feature reveal"><div class="ico" data-icon="cert"><span class="ico-inner">✦</span></div><h3>Recognised certificates</h3><p>Earn verified KNCV TB Plus certificates upon completing course assessments.</p></div>
+        <div class="feature reveal"><div class="ico" data-icon="tools"><span class="ico-inner">⌘</span></div><h3>Practical field tools</h3><p>Standard operating procedures, triage algorithms, job aids, and real-world case studies.</p></div>
+        <div class="feature reveal"><div class="ico" data-icon="access"><span class="ico-inner">◐</span></div><h3>Free &amp; accessible</h3><p>Open-access, straightforward materials designed for high-burden and low-bandwidth settings.</p></div>
+        <div class="feature reveal"><div class="ico" data-icon="community"><span class="ico-inner">⬡</span></div><h3>Global community</h3><p>Connect directly with National TB Programmes, researchers, and healthcare workers across countries.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FEATURED RESOURCES -->
+  <section class="section-white annot" data-note="05 · Featured resources & publications">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Knowledge &amp; Resources</span>
+          <h2>Featured resources &amp; publications</h2>
+          <p>Latest operational guides, annual reports, clinical articles, and technical webinars from KNCV TB Plus.</p>
+        </div>
+        <a class="btn btn-secondary" id="featured-all-resources" href="resources.html">Browse resources →</a>
+      </div>
+      <div class="grid g3">
+        <a class="card card-featured-tall reveal" href="publications.html" id="res-card-1">
+          <div class="card-thumb-tall">
+            <img src="assets/img/hub-publications.jpg" alt="Healthcare researchers reviewing KNCV Annual Knowledge Report">
+          </div>
+          <div class="card-body">
+            <div class="meta"><span class="tag solid">Report</span><span class="tag">PDF · 2.4 MB</span></div>
+            <h3>Annual Knowledge Report 2026</h3>
+            <p>Comprehensive synthesis of KNCV’s global technical assistance, operational research findings, and patient-centred innovations.</p>
+            <span class="link-arrow">Download ↓</span>
+          </div>
+        </a>
+        <a class="card reveal" href="publications.html" id="res-card-2">
+          <div class="card-thumb-wide">
+            <img src="assets/img/res-article.jpg" alt="Clinical specialist reviewing TB diagnostic data on tablet" style="object-position:center 20%">
+          </div>
+          <div class="card-body">
+            <div class="meta"><span class="tag">Article</span><span class="muted small">5 min read</span></div>
+            <h3>Right Diagnosis, Right Treatment: Patient Triage Approach</h3>
+            <p>Coupling rapid molecular tests with shorter DR-TB treatment regimens.</p>
+          </div>
+        </a>
+        <a class="card reveal" href="webinars.html" id="res-card-3">
+          <div class="card-thumb-wide">
+            <img src="assets/img/hub-webinars.jpg" alt="International panel presenting tuberculosis epidemiological data" style="object-position:center 25%">
+            <span class="card-badge-duration">VIDEO · 12 MIN</span>
+          </div>
+          <div class="card-body">
+            <div class="meta"><span class="tag">Video</span><span class="muted small">12 min</span></div>
+            <h3>Digital Health Along the Patient Pathway</h3>
+            <p>Empowering decision-making for patients, clinicians, and National TB Programmes.</p>
+          </div>
+        </a>
+        <a class="card reveal" href="publications.html" id="res-card-4">
+          <div class="card-thumb-wide">
+            <img src="assets/img/res-guide.jpg" alt="Two clinicians consulting on operational TB guide in clinic" style="object-position:center 15%">
+          </div>
+          <div class="card-body">
+            <div class="meta"><span class="tag">Guide</span><span class="muted small">PDF</span></div>
+            <h3>Find and Treat All Missing Persons with TB (FTMP)</h3>
+            <p>Practical district-level operational guide for high TB-burden countries.</p>
+          </div>
+        </a>
+        <a class="card reveal" href="publications.html" id="res-card-5">
+          <div class="card-thumb-wide">
+            <img src="assets/img/hub-stool-testing.jpg" alt="Laboratory scientist performing molecular TB diagnostic research" style="object-position:center 20%">
+          </div>
+          <div class="card-body">
+            <div class="meta"><span class="tag">Research</span><span class="muted small">Journal</span></div>
+            <h3>Time to Treatment Initiation of DR-TB Patients</h3>
+            <p>Multi-state operational study on accelerating access to drug-resistant TB care.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PRIMARY CTA (Modern Editorial Gradient Call-to-Action) -->
+  <section class="section-white cta-section annot" data-note="06 · Primary CTA: Explore Courses">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band-content">
+          <span class="cta-label">KNCV Knowledge Exchange</span>
+          <h2 class="cta-heading">Together, we can end TB.</h2>
+          <p class="cta-text">Explore accredited TB training and develop the knowledge to make a difference.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a class="btn btn-primary" id="cta-explore-courses" href="courses.html">Explore Courses →</a>
+          <a class="btn btn-secondary btn-lms" id="cta-create-account" href="#lms">Create account</a>
         </div>
       </div>
     </div>
